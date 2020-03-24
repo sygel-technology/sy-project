@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates id="template" xml:space="preserve">
+
+    <li t-name="QuickTaskTicketNavigation" class="o_quick_task_ticket_navigation_item">
+        <select name="select" class="form-control form-control-sm o_quick_task_ticket_type">
+            <option value="project.task" selected="1">Task</option>
+            <option value="helpdesk.ticket">Ticket</option>
+        </select>
+        <input type="input" class="o_quick_task_ticket_id"/>
+    </li>
+
+</templates>

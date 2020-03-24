@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="assets_backend" name="easy search task ticket backend" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/easy_search_task_ticket/static/src/js/quick_task_ticket_navigation.js"/>
+            <link rel="stylesheet" type="text/scss" href="/easy_search_task_ticket/static/src/scss/quick_task_ticket_navigation.scss"/>
+        </xpath>
+    </template>
+</odoo>

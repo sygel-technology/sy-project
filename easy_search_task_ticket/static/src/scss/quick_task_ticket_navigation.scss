@@ -1,0 +1,18 @@
+$systray_input_height: 24px;
+.o_quick_task_ticket_navigation_item {
+    height: $o-navbar-height;
+    display: inline-flex !important;
+    > input {
+        height: $systray_input_height;
+        margin-top: ($o-navbar-height - $systray_input_height) / 2;
+        padding: 4px;
+        color: black;
+    }
+    > select {
+        height: $systray_input_height;
+        margin-top: ($o-navbar-height - $systray_input_height) / 2;
+        border:0px;
+        outline:0px;
+        text-align-last: center;
+    }
+}
