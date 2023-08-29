@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[easy_search_task_ticket](easy_search_task_ticket/) | 12.0.1.0.0 | Allow search task/tickets in the main bar by id.
+[easy_search_task_ticket](project_task_expense/) | 16.0.1.0.0 | Create expenses related to project tasks.
 
 [//]: # (end addons)

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="project_task_expense_edit_project" model="ir.ui.view">
+        <field name="name">project.task.expense.edit.project</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="///group[@name='extra_settings']" position="before">
+                <group string="Expenses" name="expenses" >
+                    <field name="allow_tasks_expenses" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <record id="project_task_expense_view_task_form2" model="ir.ui.view">
+        <field name="name">project.task.expense.view.task.form2</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <field name="allow_tasks_expenses" invisible="1"/>
+                <button name="action_view_expenses" type="object" class="oe_stat_button" icon="fa-dollar" attrs="{'invisible': [('allow_tasks_expenses', '=', False)]}">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value ">
+                            <field name="expenses_count" widget="statinfo" nolabel="1" />
+                            Expenses
+                        </span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
