@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="portal_sign_task_button" name="Sign Task">
+        <a t-if="task.needs_signature()" role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalaccept" href="#">
+            <i class="fa fa-check me-1"/>Sign
+        </a>
+        <div t-if="task.needs_signature()" role="dialog" class="modal fade" id="modalaccept">
+            <div class="modal-dialog">
+                <form id="accept" method="POST" t-att-data-task-id="task.id" t-att-data-token="task.access_token" class="js_accept_json modal-content js_website_submit_form">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <header class="modal-header">
+                        <h4 class="modal-title">Sign Task</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </header>
+                    <main class="modal-body" id="sign-dialog">
+                        <t t-call="portal.signature_form">
+                            <t t-set="call_url" t-value="task.get_portal_url(suffix='/project_task/sign/%s' % source)"/>
+                            <t t-set="default_name" t-value="task.partner_id.name"/>
+                            <t t-set="font_color" t-value="'black'"/>
+                            <t t-set="send_label">Sign</t>
+                        </t>
+                    </main>
+                </form>
+            </div>
+        </div>
+    </template>
+    <template id="portal_my_task" inherit_id="project.portal_my_task">
+        <xpath expr="//li[@id='nav-report']" position="before">
+            <li t-if="task.needs_signature()" class="list-group-item d-grid">
+                <t t-call="project_task_sign.portal_sign_task_button"/>
+            </li>
+            <div class="card text-center pb-2 pt-3 bg-success text-white" t-if="task.signed">
+                <h2 class="mb-0">
+                    SIGNED
+                </h2>
+            </div>
+        </xpath>
+    </template>
+</odoo>
