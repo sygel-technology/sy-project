@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_stock_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-30 07:55+0000\n"
+"PO-Revision-Date: 2023-08-30 09:55+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: project_stock_portal
+#: model_terms:ir.ui.view,arch_db:project_stock_portal.portal_task_stock
+msgid "Materials"
+msgstr "Materiales"
+
+#. module: project_stock_portal
+#: model_terms:ir.ui.view,arch_db:project_stock_portal.portal_task_stock_table
+msgid "Name"
+msgstr "Nombre"
+
+#. module: project_stock_portal
+#: model_terms:ir.ui.view,arch_db:project_stock_portal.portal_task_stock_table
+msgid "Quantity"
+msgstr "Cantidad"
