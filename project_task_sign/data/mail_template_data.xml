@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data noupdate="1">
+        <record id="email_template_project_task_sign" model="mail.template">
+            <field name="name">Worksheet document</field>
+            <field name="model_id" ref="project.model_project_task"/>
+            <field name="subject">Worksheet Document</field>
+            <field name="email_from">{{ (object.company_id.email_formatted or user.email_formatted) }}</field>
+            <field name="report_template" ref="hr_timesheet.timesheet_report_task"/>
+            <field name="report_name">{{ (object.name or '').replace('/','_') }}</field>
+            <field name="body_html" type="html">
+                <div>
+                    <p>Hello,</p>
+                    <p>Please, find attached the worksheet document with its signature</p>
+                    <p>King regards</p>
+                </div>
+            </field>
+            <field name="lang">{{ object.partner_id.lang }}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

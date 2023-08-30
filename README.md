@@ -8,5 +8,6 @@ Available addons
 addon | version | summary
 --- | --- | ---
 [project_task_expense](project_task_expense/) | 16.0.1.0.0 | Create expenses related to project tasks.
+[project_task_sign](project_task_sign/) | 16.0.1.0.0 | Sign tasks from portal.
 
 [//]: # (end addons)
