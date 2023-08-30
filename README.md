@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[easy_search_task_ticket](project_task_expense/) | 16.0.1.0.0 | Create expenses related to project tasks.
+[project_task_expense](project_task_expense/) | 16.0.1.0.0 | Create expenses related to project tasks.
 
 [//]: # (end addons)
