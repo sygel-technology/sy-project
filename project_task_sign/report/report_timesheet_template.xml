@@ -2,15 +2,10 @@
 <!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <template id="project_task_sign_timesheet_sale_page" inherit_id="hr_timesheet.timesheet_project_task_page">
-        <xpath expr="//t[@t-if='from_project']" position="after">
-            <div t-field="doc.partner_id"
-                t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
-            <p t-if="doc.partner_id.vat"><t t-out="doc.company_id.account_fiscal_country_id.vat_label or 'Tax ID'"/>: <span t-field="doc.partner_id.vat"/></p>
-        </xpath>
-        <xpath expr="//t[@t-if='doc.allow_timesheets and doc.timesheet_ids']/../.." position="after">
-            <t t-if="doc._name == 'project.task'">
-                <t t-set="material_lines" t-value="doc.move_ids.filtered(lambda a: a.quantity_done > 0.0)"/>
+    <template id="project_task_sign_timesheet_table" inherit_id="hr_timesheet.timesheet_table">
+        <xpath expr="div[hasclass('mt8')]" position="after">
+            <div t-if="len(lines.task_id) == 1">
+                <t t-set="material_lines" t-value="lines.task_id.move_ids.filtered(lambda a: a.quantity_done > 0.0)"/>
                 <t t-if="material_lines">
                     <div class="row mt8">
                         <div class="col-12">
@@ -33,24 +28,24 @@
                         </div>
                     </div>
                 </t>
-                <div t-if="doc.signed">              
-                    <div class="row mt8" align="right" t-if="doc.signature_img">
+                <t t-if="lines.task_id.signed">     
+                    <div class="row mt8" align="right" t-if="lines.task_id.signature_img">
                         <div class="col-12">
-                            <img t-att-src="image_data_uri(doc.signature_img)" style="width: 320px;"/>
+                            <img t-att-src="image_data_uri(lines.task_id.signature_img)" style="width: 320px;"/>
                         </div>
                     </div>
-                    <div class="row mt8" align="right" t-if="doc.signature_name">
+                    <div class="row mt8" align="right" t-if="lines.task_id.signature_name">
                         <div class="col-12">
-                            <p t-esc="doc.signature_name"/>
+                            <p t-esc="lines.task_id.signature_name"/>
                         </div>
                     </div>
-                    <div class="row mt8" align="right" t-if="doc.signature_date">
+                    <div class="row mt8" align="right" t-if="lines.task_id.signature_date">
                         <div class="col-12">
-                            <p t-field="doc.signature_date" t-options="{'widget': 'datetime', 'format': 'dd/MM/YYYY - hh:mm'}"/>
+                            <p t-field="lines.task_id.signature_date" t-options="{'widget': 'datetime', 'format': 'dd/MM/YYYY - hh:mm'}"/>
                         </div>
                     </div>
-                </div>
-            </t>
+                </t>
+            </div>
         </xpath>
     </template>
 </odoo>
