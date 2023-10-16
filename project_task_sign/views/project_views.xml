@@ -41,6 +41,9 @@
             <xpath expr="//notebook" position="inside">
                 <page string="Signature">
                     <group>
+                        <button icon="fa-times" string="Reset Signature" type="object" name="reset_signature" attrs="{'invisible': [('signed', '=', False)]}" />
+                    </group>
+                    <group>
                         <group>
                             <field name="allow_customer_signature"/>
                         </group>

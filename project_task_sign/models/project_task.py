@@ -86,10 +86,22 @@ class ProjectTask(models.Model):
         if img:
             vals['signature_img'] = img
         self.write(vals)
+        attachment = self.env['ir.attachment'].create({
+            'name': 'task_{}_signature_{}_{}'.format(
+                self.name,
+                name,
+                date_time
+            ),
+            'res_id': self.id,
+            'res_model': self._name,
+            'datas': img,
+            'type': 'binary',
+        })
         self.message_post(
             body="Task signed on {} by {}".format(
                 date_time, name
-            )
+            ),
+            attachment_ids=attachment.ids
         )
         if self.send_automatic_signature_mail:
             self._send_signature_mail()
@@ -127,3 +139,12 @@ class ProjectTask(models.Model):
             'target': 'new',
             'context': ctx,
         }
+
+    def reset_signature(self):
+        self.ensure_one()
+        self.write({
+            "signed": False,
+            "signature_name": False,
+            "signature_img": False,
+            "signature_date": False
+        })

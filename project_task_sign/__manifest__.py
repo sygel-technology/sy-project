@@ -12,7 +12,8 @@
     "website": "https://www.sygel.es",
     "depends": [
         "project",
-        "hr_timesheet"
+        "hr_timesheet",
+        "project_stock"
     ],
     "data": [
         "data/mail_template_data.xml",
