@@ -27,6 +27,9 @@
         </div>
     </template>
     <template id="portal_my_task" inherit_id="project.portal_my_task">
+        <xpath expr="//div[hasclass('o_download_pdf')]" position="attributes">
+            <attribute name="t-if">not user_id._is_public()</attribute>
+        </xpath>
         <xpath expr="//li[@id='nav-report']" position="before">
             <li t-if="task.needs_signature()" class="list-group-item d-grid">
                 <t t-call="project_task_sign.portal_sign_task_button"/>

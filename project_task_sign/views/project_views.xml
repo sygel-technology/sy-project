@@ -41,11 +41,12 @@
             <xpath expr="//notebook" position="inside">
                 <page string="Signature">
                     <group>
-                        <button icon="fa-times" string="Reset Signature" type="object" name="reset_signature" attrs="{'invisible': [('signed', '=', False)]}" />
-                    </group>
-                    <group>
                         <group>
-                            <field name="allow_customer_signature"/>
+                            <label for="allow_customer_signature"/>
+                            <div name="tracking">
+                                <field name="allow_customer_signature" class="oe_inline text-break" />
+                                <button icon="fa-times" string="Reset Signature" type="object" name="reset_signature" attrs="{'invisible': [('signed', '=', False)]}" />
+                            </div>
                         </group>
                         <group>
                             <field name="send_automatic_signature_mail" attrs="{'invisible': [('allow_customer_signature', '=', False)]}"/>
