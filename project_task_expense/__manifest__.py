@@ -13,7 +13,8 @@
     "installable": True,
     "depends": [
         "project",
-        "hr_expense"
+        "hr_expense",
+        "hr_timesheet"
     ],    
     "data": [
         "views/project_views.xml",
