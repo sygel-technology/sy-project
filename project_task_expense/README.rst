@@ -77,10 +77,10 @@ Maintainer
 
 This module is maintained by Sygel.
 
-.. image:: https://pbs.twimg.com/profile_images/702799639855157248/ujffk9GL_200x200.png
+.. image:: https://www.sygel.es/logo.png
    :alt: Sygel
    :target: https://www.sygel.es
 
-This module is part of the `Sygel/sy-project <https://github.com/sygel/sy-project>`_.
+This module is part of the `Sygel/sy-project <https://github.com/sygel-technology/sy-project>`_.
 
 To contribute to this module, please visit https://github.com/sygel.

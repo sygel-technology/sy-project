@@ -74,7 +74,7 @@ Maintainer
 
 This module is maintained by Sygel.
 
-.. image:: https://pbs.twimg.com/profile_images/702799639855157248/ujffk9GL_200x200.png
+.. image:: https://www.sygel.es/logo.png
    :alt: Sygel
    :target: https://www.sygel.es
 
