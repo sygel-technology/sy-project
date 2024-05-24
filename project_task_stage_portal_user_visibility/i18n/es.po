@@ -1,0 +1,37 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_task_stage_portal_user_visibility
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-22 15:03+0000\n"
+"PO-Revision-Date: 2024-05-22 17:03+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: project_task_stage_portal_user_visibility
+#: model:ir.model.fields,help:project_task_stage_portal_user_visibility.field_project_task_type__view_in_portal
+msgid ""
+"Activate this option so portal users can have acces to the tasks in this "
+"stage."
+msgstr ""
+"Activa esta opción para hacer visibles las tareas en esta etapa a los "
+"usuarios portal."
+
+#. module: project_task_stage_portal_user_visibility
+#: model:ir.model,name:project_task_stage_portal_user_visibility.model_project_task_type
+msgid "Task Stage"
+msgstr "Etapa de la tarea"
+
+#. module: project_task_stage_portal_user_visibility
+#: model:ir.model.fields,field_description:project_task_stage_portal_user_visibility.field_project_task_type__view_in_portal
+msgid "View In Portal"
+msgstr "Ver en portal"
