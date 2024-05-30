@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+<record id="project_task_restrict_stage_timesheets.res_group_all_stages" model="res.groups">
+    <field name="name">Skip task stage timesheet restriction</field>
+    <field name="category_id" ref="base.module_category_usability"/>
+    <field name="comment">
+        The user will be able to create timesheets for a task in every stage without restriction.
+    </field>
+    <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+</record>
+
+</odoo>
