@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record id="task_type_restrict_stage_changes_form" model="ir.ui.view">
+        <field name="name">project.task.type.restrict.stage.changes.form</field>
+        <field name="model">project.task.type</field>
+        <field name="inherit_id" ref="project.task_type_edit"/>
+        <field name="arch" type="xml">
+            <field name="fold" position="after">
+                <field name="restrict_stage_assignment" />
+                <field name="restrict_stage_deallocation" />
+            </field>
+        </field>
+    </record>
+
+</odoo>
