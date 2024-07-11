@@ -1,7 +1,7 @@
 # Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import models, fields
+from odoo import fields, models
 
 
 class ProjectTaskType(models.Model):
@@ -10,5 +10,5 @@ class ProjectTaskType(models.Model):
     view_in_portal = fields.Boolean(
         string="View In Portal",
         help="Activate this option so portal users can have acces to the"
-        " tasks in this stage."
-    )    
+        " tasks in this stage.",
+    )
