@@ -10,5 +10,5 @@ class ProjectTask(models.Model):
     task_requirement_ids = fields.One2many(
         string="Requirements",
         comodel_name="task.requirement",
-        inverse_name="project_task_id"
+        inverse_name="project_task_id",
     )
