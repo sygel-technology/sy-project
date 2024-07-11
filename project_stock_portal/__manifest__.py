@@ -9,11 +9,8 @@
         Show task's stock materials in portal.
     """,
     "author": "Sygel",
-    "website": "https://www.sygel.es",
-    "depends": [
-        "project_stock",
-        "hr_timesheet"
-    ],
+    "website": "https://github.com/sygel-technology/sy-project",
+    "depends": ["project_stock", "hr_timesheet"],
     "data": [
         "views/project_portal_templates.xml",
     ],

@@ -6,14 +6,14 @@
     "summary": "Hide tasks in portal according to task's stage",
     "version": "16.0.1.0.0",
     "category": "Project",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-project",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
     "depends": [
         "project",
-    ],    
+    ],
     "data": [
         "views/project_views.xml",
         "security/ir_rule.xml",

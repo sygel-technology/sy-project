@@ -1,24 +1,24 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
     <record id="project_task_stage_portal_user_visibility_form" model="ir.ui.view">
         <field name="name">project.task.stage.portal.user.visibility.form</field>
         <field name="model">project.task.type</field>
-        <field name="inherit_id" ref="project.task_type_edit"/>
+        <field name="inherit_id" ref="project.task_type_edit" />
         <field name="arch" type="xml">
             <field name="project_ids" position="after">
-                <field name="view_in_portal"/>
+                <field name="view_in_portal" />
             </field>
         </field>
     </record>
     <record id="project_task_stage_portal_user_visibility_tree" model="ir.ui.view">
         <field name="name">project.task.stage.portal.user.visibility.tree</field>
         <field name="model">project.task.type</field>
-        <field name="inherit_id" ref="project.task_type_tree"/>
+        <field name="inherit_id" ref="project.task_type_tree" />
         <field name="arch" type="xml">
             <field name="fold" position="after">
-                <field name="view_in_portal"  optional="hide"/>
+                <field name="view_in_portal" optional="hide" />
             </field>
         </field>
     </record>
