@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="project_task_description_template_view_form_section" model="ir.ui.view">
+        <field name="name">project.task.description.template.view.form.section</field>
+        <field name="model">project.task.description.template</field>
+        <field
+            name="inherit_id"
+            ref="project_task_description_template.project_task_description_template_view_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//group/group" position="inside">
+                <field name="template_order" />
+            </xpath>
+            <xpath expr="//group/group" position="after">
+                <group>
+                    <field name="section" />
+                    <field
+                        name="section_name"
+                        attrs="{'invisible': [('section', '=', False)]}"
+                    />
+                    <field
+                        name="section_with_date"
+                        attrs="{'invisible': [('section', '=', False)]}"
+                    />
+                    <field
+                        name="section_delimiter_style"
+                        attrs="{'invisible': [('section', '=', False)]}"
+                    />
+                    <field
+                        name="section_delimiter_header"
+                        attrs="{'invisible': [('section', '=', False)]}"
+                    />
+                    <field
+                        name="section_delimiter_footer"
+                        attrs="{'invisible': [('section', '=', False)]}"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
