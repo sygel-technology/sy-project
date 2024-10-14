@@ -7,15 +7,15 @@
         <field name="model">project.task</field>
         <field name="inherit_id" ref="project.view_task_form2" />
         <field name="arch" type="xml">
-        	<xpath expr="//group[1]" position="before">
-        		<group name="blocked_reason">
-        			<field
+            <xpath expr="//group[1]" position="before">
+                <group name="blocked_reason">
+                    <field
                         name="task_blocked_reason"
                         attrs="{'invisible': [('kanban_state', '!=', 'blocked')]}"
                         decoration-danger="1 == 1"
                     />
-        		</group>
-        	</xpath>
+                </group>
+            </xpath>
         </field>
     </record>
 
