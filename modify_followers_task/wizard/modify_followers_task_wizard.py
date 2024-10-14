@@ -1,7 +1,7 @@
 # Copyright 2019 Joan Segui <joan.segui@qubiq.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import _, fields, models
+from odoo import fields, models
 
 
 class ModifyFollowersTaskWizard(models.TransientModel):
@@ -10,7 +10,7 @@ class ModifyFollowersTaskWizard(models.TransientModel):
 
     follower_ids = fields.Many2many(
         comodel_name="res.partner",
-        string=_("Followers"),
+        string="Followers",
         default=lambda self: self.env["project.task"]
         .browse(self._context.get("active_id"))
         .message_partner_ids.ids,

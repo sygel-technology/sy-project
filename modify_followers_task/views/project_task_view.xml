@@ -1,20 +1,20 @@
 <!--Copyright 2019 Joan Segui <joan.segui@qubiq.es>
-   	License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).-->
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).-->
 <odoo>
-	<record id="project_task_form_view" model="ir.ui.view">
-		<field name="name">project.task.form.view</field>
-		<field name="model">project.task</field>
-		<field name="inherit_id" ref="project.view_task_form2" />
-		<field name="arch" type="xml">
-			<div name="button_box" position="inside">
-				<button
+    <record id="project_task_form_view" model="ir.ui.view">
+        <field name="name">project.task.form.view</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
                     type="action"
                     name="%(modify_followers_task.action_modify_followers_task)d"
                     class="oe_stat_button"
                     string="Modify Followers"
                     icon="fa-address-card-o"
                 />
-			</div>
-		</field>
-	</record>
+            </div>
+        </field>
+    </record>
 </odoo>
