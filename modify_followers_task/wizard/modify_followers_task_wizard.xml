@@ -1,5 +1,5 @@
 <!--Copyright 2019 Joan Segui <joan.segui@qubiq.es>
-   	License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).-->
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).-->
 <odoo>
     <record id="modify_followers_task_wizard" model="ir.ui.view">
         <field name="name">modify.followers.task.wizard</field>

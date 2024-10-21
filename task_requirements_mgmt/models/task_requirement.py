@@ -8,20 +8,18 @@ class TaskRequirement(models.Model):
     _name = "task.requirement"
     _description = "Task Requirement"
 
-    specification_date = fields.Date(
-        string="Specification Date", default=fields.Date.today()
-    )
-    description = fields.Char(string="Description")
-    completed = fields.Boolean(string="Completed")
+    specification_date = fields.Date(default=fields.Date.today())
+    description = fields.Char()
+    completed = fields.Boolean()
     completed_date = fields.Date(
         string="·Completed Date",
         compute="_compute_completed_date",
         readonly=False,
         store=True,
     )
-    tested = fields.Boolean(string="Tested")
+    tested = fields.Boolean()
     tested_date = fields.Date(
-        string="Tested Date", compute="_compute_tested_date", readonly=False, store=True
+        compute="_compute_tested_date", readonly=False, store=True
     )
     project_task_id = fields.Many2one(string="Task", comodel_name="project.task")
 
