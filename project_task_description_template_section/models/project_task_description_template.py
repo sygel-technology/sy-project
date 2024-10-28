@@ -33,9 +33,10 @@ class ProjectTaskDescriptionTemplate(models.Model):
         for rec in self:
             if rec.section:
                 centered_text = (
-                    f" {rec.section_name} {datetime.date.today().strftime('%d/%m/%Y')} "
+                    f" {rec.section_name or ''}"
+                    f" {datetime.date.today().strftime('%d/%m/%Y')} "
                     if rec.section_with_date
-                    else f" {rec.section_name} "
+                    else f" {rec.section_name or ''} "
                 )
                 style = rec.section_delimiter_style
                 rec.section_delimiter_header = f"""
