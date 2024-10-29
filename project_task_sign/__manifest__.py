@@ -5,11 +5,12 @@
     "name": "Project Task Sign",
     "version": "16.0.1.0.0",
     "category": "Project",
-    "description": """
+    "summary": """
         Sign tasks from portal.
     """,
     "author": "Sygel",
     "website": "https://github.com/sygel-technology/sy-project",
+    "license": "AGPL-3",
     "depends": ["project", "hr_timesheet", "project_stock"],
     "data": [
         "data/mail_template_data.xml",

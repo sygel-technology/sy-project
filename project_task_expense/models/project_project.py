@@ -7,10 +7,8 @@ from odoo import _, fields, models
 class ProjectProject(models.Model):
     _inherit = "project.project"
 
-    allow_tasks_expenses = fields.Boolean(string="Allow Tasks Expenses")
-    expenses_count = fields.Integer(
-        string="Expenses Count", compute="_compute_expenses_count"
-    )
+    allow_tasks_expenses = fields.Boolean()
+    expenses_count = fields.Integer(compute="_compute_expenses_count")
 
     def _compute_expenses_count(self):
         for sel in self:
