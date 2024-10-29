@@ -10,20 +10,18 @@ class ProjectTask(models.Model):
     _inherit = "project.task"
 
     allow_customer_signature = fields.Boolean(
-        string="Allow Customer Signature",
         compute="_compute_allow_customer_signature",
         store=True,
         readonly=False,
     )
     send_automatic_signature_mail = fields.Boolean(
-        string="Send Automatic Signature Mail",
         compute="_compute_send_automatic_signature_mail",
         store=True,
         readonly=False,
     )
-    signed = fields.Boolean(string="Signed", readonly=True, copy=False)
-    signature_name = fields.Char(string="Signature Name", copy=False, readonly=True)
-    signature_img = fields.Binary(string="Signature Img.", copy=False, readonly=True)
+    signed = fields.Boolean(readonly=True, copy=False)
+    signature_name = fields.Char(copy=False, readonly=True)
+    signature_img = fields.Binary(copy=False, readonly=True)
     signature_date = fields.Datetime(
         string="Signature Date/Time", copy=False, readonly=True
     )

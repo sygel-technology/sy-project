@@ -7,7 +7,5 @@ from odoo import fields, models
 class ProjectProject(models.Model):
     _inherit = "project.project"
 
-    allow_customer_signature = fields.Boolean(string="Allow Customer Signature")
-    send_automatic_signature_mail = fields.Boolean(
-        string="Send Automatic Signature Mail"
-    )
+    allow_customer_signature = fields.Boolean()
+    send_automatic_signature_mail = fields.Boolean()

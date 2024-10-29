@@ -8,7 +8,6 @@ class ProjectTaskType(models.Model):
     _inherit = "project.task.type"
 
     view_in_portal = fields.Boolean(
-        string="View In Portal",
         help="Activate this option so portal users can have acces to the"
         " tasks in this stage.",
     )

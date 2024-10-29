@@ -13,7 +13,7 @@ class HrExpense(models.Model):
 
     def _compute_analytic_distribution(self):
         for sel in self:
-            analytic_distribution = super()._compute_analytic_distribution()
+            res = analytic_distribution = super()._compute_analytic_distribution()
             if (
                 self.project_task_id
                 and self.project_task_id.project_id
@@ -23,6 +23,7 @@ class HrExpense(models.Model):
                     self.project_task_id.project_id.analytic_account_id.id: 100
                 }
             sel.analytic_distribution = analytic_distribution
+        return res
 
     @api.onchange("project_task_id")
     def _onchange_project_task_id(self):

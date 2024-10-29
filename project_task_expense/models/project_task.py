@@ -10,9 +10,7 @@ class ProjectTask(models.Model):
     hr_expense_ids = fields.One2many(
         string="Expenses", comodel_name="hr.expense", inverse_name="project_task_id"
     )
-    expenses_count = fields.Integer(
-        string="Expenses Count", compute="_compute_expenses_count"
-    )
+    expenses_count = fields.Integer(compute="_compute_expenses_count")
     allow_tasks_expenses = fields.Boolean(related="project_id.allow_tasks_expenses")
 
     def _compute_expenses_count(self):

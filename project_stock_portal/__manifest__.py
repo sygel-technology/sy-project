@@ -5,11 +5,12 @@
     "name": "Project Stock Portal",
     "version": "16.0.1.0.0",
     "category": "Project",
-    "description": """
+    "summary": """
         Show task's stock materials in portal.
     """,
     "author": "Sygel",
     "website": "https://github.com/sygel-technology/sy-project",
+    "license": "AGPL-3",
     "depends": ["project_stock", "hr_timesheet"],
     "data": [
         "views/project_portal_templates.xml",
