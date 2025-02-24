@@ -12,7 +12,7 @@
                     <field
                         name="task_blocked_reason"
                         attrs="{'invisible': [('kanban_state', '!=', 'blocked')]}"
-                        decoration-danger="1 == 1"
+                        decoration-danger="1"
                     />
                 </group>
             </xpath>
@@ -24,11 +24,12 @@
         <field name="model">project.task</field>
         <field name="inherit_id" ref="project.view_task_kanban" />
         <field name="arch" type="xml">
-            <xpath
-                expr="//t[@t-name='kanban-box']/div[1]/div[1]/div[3]"
-                position="after"
-            >
-                <div name="blocked_reason">
+            <xpath expr="//t[@t-name='kanban-box']/div[1]/div[1]" position="after">
+                <div
+                    name="blocked_reason"
+                    groups="base.group_user"
+                    style="background: #fdedec; margin-top: 5px; color: #CD5C5C;"
+                >
                     <field
                         name="task_blocked_reason"
                         attrs="{'invisible': [('kanban_state', '!=', 'blocked')]}"
