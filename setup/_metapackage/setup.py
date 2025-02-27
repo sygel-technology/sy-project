@@ -12,6 +12,7 @@ setuptools.setup(
         'odoo-addon-modify_followers_task>=15.0dev,<15.1dev',
         'odoo-addon-project_task_block_reason>=15.0dev,<15.1dev',
         'odoo-addon-project_task_description_template_section>=15.0dev,<15.1dev',
+        'odoo-addon-project_task_show_project_manager>=15.0dev,<15.1dev',
         'odoo-addon-task_requirements_mgmt>=15.0dev,<15.1dev',
     ],
     classifiers=[
