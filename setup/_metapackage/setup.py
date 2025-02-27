@@ -10,6 +10,7 @@ setuptools.setup(
     install_requires=[
         'odoo-addon-duplicate_project_task_timesheet>=15.0dev,<15.1dev',
         'odoo-addon-modify_followers_task>=15.0dev,<15.1dev',
+        'odoo-addon-project_subtask_default_display_project>=15.0dev,<15.1dev',
         'odoo-addon-project_task_block_reason>=15.0dev,<15.1dev',
         'odoo-addon-project_task_description_template_section>=15.0dev,<15.1dev',
         'odoo-addon-project_task_show_project_manager>=15.0dev,<15.1dev',
