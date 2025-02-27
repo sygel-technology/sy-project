@@ -7,8 +7,9 @@ from odoo.tests.common import Form, TransactionCase
 
 
 class TestProjectTaskDescriptionTemplateSection(TransactionCase):
-    def setUp(cls):
-        super().setUp()
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
         cls.task_id = cls.env["project.task"].create(
             {"name": "Test task", "description": "Task Description"}
         )
