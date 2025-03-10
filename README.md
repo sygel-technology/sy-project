@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [duplicate_project_task_timesheet](duplicate_project_task_timesheet/) | 16.0.1.0.0 |  | Button to duplicate project task timesheet lines
 [project_stock_portal](project_stock_portal/) | 16.0.1.0.0 |  | Show task's stock materials in portal.
+[project_task_block_reason](project_task_block_reason/) | 16.0.1.0.0 |  | Introduce a reason when a task is blocked
 [project_task_description_template_section](project_task_description_template_section/) | 16.0.1.0.0 |  | Project Task Description Template Section
 [project_task_expense](project_task_expense/) | 16.0.1.0.0 |  | Create expenses related to project tasks
 [project_task_identification](project_task_identification/) | 16.0.1.0.0 |  | Project Task Identification
