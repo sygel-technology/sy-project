@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record model="project.odoo.version" id="odoo_v7">
+        <field name="name">7</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v8">
+        <field name="name">8</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v9">
+        <field name="name">9</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v10">
+    <field name="name">10</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v10e">
+        <field name="name">10E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v11">
+        <field name="name">11</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v11e">
+        <field name="name">11E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v12">
+        <field name="name">12</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v12e">
+        <field name="name">12E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v13">
+        <field name="name">13</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v13e">
+        <field name="name">13E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v14">
+        <field name="name">14</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v14e">
+        <field name="name">14E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v15">
+        <field name="name">15</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v15e">
+        <field name="name">15E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v16">
+        <field name="name">16</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v16e">
+        <field name="name">16E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v17">
+        <field name="name">17</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v17e">
+        <field name="name">17E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v18">
+        <field name="name">18</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v18e">
+        <field name="name">18E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v19">
+        <field name="name">19</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v19e">
+        <field name="name">19E</field>
+    </record>
+</odoo>

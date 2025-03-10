@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_odoo_version
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 09:46+0000\n"
+"PO-Revision-Date: 2025-03-10 09:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__active
+msgid "Active Odoo Version"
+msgstr "Actiu"
+
+#. module: project_odoo_version
+#: model_terms:ir.ui.view,arch_db:project_odoo_version.project_odoo_version_search
+msgid "Archived"
+msgstr "Arxivat"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__display_name
+msgid "Display Name"
+msgstr "Nom mostrat"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__id
+msgid "ID"
+msgstr ""
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version____last_update
+msgid "Last Modified on"
+msgstr "Darrera modificació el"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__write_uid
+msgid "Last Updated by"
+msgstr "Darrera actualització per"
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__write_date
+msgid "Last Updated on"
+msgstr "Darrera actualització"
+
+#. module: project_odoo_version
+#: model:ir.actions.act_window,name:project_odoo_version.action_project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__name
+#: model_terms:ir.ui.view,arch_db:project_odoo_version.project_odoo_version_form_view
+msgid "Odoo Version"
+msgstr "Versió d'Odoo"
+
+#. module: project_odoo_version
+#: model:ir.ui.menu,name:project_odoo_version.project_odoo_version_menu
+msgid "Odoo Versions"
+msgstr "Versions d'Odoo"
+
+#. module: project_odoo_version
+#: model:ir.model,name:project_odoo_version.model_project_project
+msgid "Project"
+msgstr "Projecte"
+
+#. module: project_odoo_version
+#: model:ir.model,name:project_odoo_version.model_project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_project__odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_task__odoo_version
+msgid "Project Odoo Version"
+msgstr "Versió d'Odoo"
+
+#. module: project_odoo_version
+#: model_terms:ir.ui.view,arch_db:project_odoo_version.project_odoo_version_search
+msgid "Search Odoo Version"
+msgstr "Cerca la versió d'Odoo"
+
+#. module: project_odoo_version
+#: model:ir.model,name:project_odoo_version.model_project_task
+msgid "Task"
+msgstr "Tasca"
+
+#. module: project_odoo_version
+#. odoo-python
+#: code:addons/project_odoo_version/models/project_odoo_version.py:0
+#, python-format
+msgid "There cannot be two Odoo version with the same name."
+msgstr "No pot haver-hi dues versions de Odoo amb el mateix nom."
+
+#. module: project_odoo_version
+#: model:ir.model.fields,field_description:project_odoo_version.field_project_odoo_version__description
+msgid "Version Description"
+msgstr "Descripció"
+
+#. module: project_odoo_version
+#. odoo-python
+#: code:addons/project_odoo_version/models/project_project.py:0
+#, python-format
+msgid ""
+"You can choose only one active version. If you want to select it, activate "
+"it first."
+msgstr ""
+"Només es pot triar una versió d'Odoo activa. Si vols seleccionar-la activi-"
+"la primer."
+
+#. module: project_odoo_version
+#. odoo-python
+#: code:addons/project_odoo_version/models/project_odoo_version.py:0
+#, python-format
+msgid "You cannot archive a version of Odoo associated with an active record."
+msgstr ""
+"No podeu arxivar una versió de l'Odoo associada amb un registre actiu.."
+
+#. module: project_odoo_version
+#. odoo-python
+#: code:addons/project_odoo_version/models/project_odoo_version.py:0
+#, python-format
+msgid "You cannot delete a version of Odoo associated with an active record."
+msgstr ""
+"No podeu suprimir una versió de l'Odoo associada amb un registre actiu."
