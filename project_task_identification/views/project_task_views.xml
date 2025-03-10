@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="project_task_identification_view_task_form2" model="ir.ui.view">
+        <field name="name">project.task.identification.view.task.form2</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="before">
+                <field name="sy_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="project_task_identification_view_task_tree2" model="ir.ui.view">
+        <field name="name">project.task.identification.view.task.tree2</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="sy_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="project_task_identification_view_task_kanban" model="ir.ui.view">
+        <field name="name">project.task.identification.view.task.kanban</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_kanban" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']/../.." position="inside">
+                <div groups="base.group_user">
+                    <b>#<field name="sy_id" float="left" /></b>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
