@@ -4,14 +4,14 @@
 {
     "name": "Project Subtask Default Display Project",
     "summary": "Project Subtask Default Display Project",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Project",
     "website": "https://github.com/sygel-technology/sy-project",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["project"],
+    "depends": ["project", "base_view_inheritance_extension"],
     "data": [
         "views/project_task_views.xml",
     ],
