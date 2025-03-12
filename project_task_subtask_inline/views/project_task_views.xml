@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="project_task_subtask_inline_view_task_form2" model="ir.ui.view">
+        <field name="name">project.task.subtask.inline.view.task.form2</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='child_ids']" position='attributes'>
+                <attribute name="widget">one2many</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
