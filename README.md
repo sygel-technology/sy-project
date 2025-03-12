@@ -23,7 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [duplicate_project_task_timesheet](duplicate_project_task_timesheet/) | 15.0.1.0.0 |  | Button to duplicate project task timesheet lines
 [modify_followers_task](modify_followers_task/) | 15.0.1.0.0 |  | Modify list of followers from a project task
-[project_subtask_default_display_project](project_subtask_default_display_project/) | 15.0.1.0.0 |  | Project Subtask Default Display Project
+[project_subtask_default_display_project](project_subtask_default_display_project/) | 15.0.1.1.0 |  | Project Subtask Default Display Project
 [project_task_block_reason](project_task_block_reason/) | 15.0.1.0.0 |  | Introduce a reason when a task is blocked
 [project_task_description_template_section](project_task_description_template_section/) | 15.0.1.0.0 |  | Project Task Description Template Section
 [project_task_show_project_manager](project_task_show_project_manager/) | 15.0.1.0.0 |  | Show Project Manager in Project Task
