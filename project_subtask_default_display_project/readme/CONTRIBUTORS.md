@@ -1,2 +1,3 @@
-- Ángel García de la Chica Herrera \<<angel.garcia@sygel.es>\>
-- Valentín Vinagre \<<valentin.vinagre@sygel.es>\>
+- [Sygel](https://www.sygel.es):
+  - Angel García de la Chica Herrera
+  - Valentín Vinagre
