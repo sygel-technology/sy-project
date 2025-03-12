@@ -27,7 +27,7 @@ addon | version | maintainers | summary
 [project_task_block_reason](project_task_block_reason/) | 15.0.1.0.0 |  | Introduce a reason when a task is blocked
 [project_task_description_template_section](project_task_description_template_section/) | 15.0.1.0.0 |  | Project Task Description Template Section
 [project_task_show_project_manager](project_task_show_project_manager/) | 15.0.1.0.0 |  | Show Project Manager in Project Task
-[task_requirements_mgmt](task_requirements_mgmt/) | 15.0.1.0.0 |  | Manage requirements related to a task
+[task_requirements_mgmt](task_requirements_mgmt/) | 15.0.1.1.0 |  | Manage requirements related to a task
 
 [//]: # (end addons)
 
