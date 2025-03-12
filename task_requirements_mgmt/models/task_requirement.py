@@ -8,7 +8,7 @@ class TaskRequirement(models.Model):
     _name = "task.requirement"
     _description = "Task Requirement"
 
-    specification_date = fields.Date(default=fields.Date.today())
+    specification_date = fields.Date(default=fields.Date.context_today)
     description = fields.Char()
     completed = fields.Boolean()
     completed_date = fields.Date(
@@ -25,7 +25,7 @@ class TaskRequirement(models.Model):
 
     @api.depends("completed")
     def _compute_completed_date(self):
-        today = fields.Date.today()
+        today = fields.Date.context_today(self)
         for sel in self:
             sel.completed_date = (
                 today if sel.completed and not sel.completed_date else False
@@ -33,6 +33,6 @@ class TaskRequirement(models.Model):
 
     @api.depends("tested")
     def _compute_tested_date(self):
-        today = fields.Date.today()
+        today = fields.Date.context_today(self)
         for sel in self:
             sel.tested_date = today if sel.tested and not sel.tested_date else False
