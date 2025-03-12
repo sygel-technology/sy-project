@@ -4,7 +4,7 @@
 {
     "name": "Project Subtask Default Display Project",
     "summary": "Project Subtask Default Display Project",
-    "version": "15.0.1.1.0",
+    "version": "16.0.1.1.0",
     "category": "Project",
     "website": "https://github.com/sygel-technology/sy-project",
     "author": "Sygel, Odoo Community Association (OCA)",
