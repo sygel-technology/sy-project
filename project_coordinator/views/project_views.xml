@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="project_coordinator_edit_project" model="ir.ui.view">
+        <field name="name">project.coordinator.edit.project</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field
+                    name="project_coordinator_id"
+                    widget="many2one_avatar_user"
+                    attrs="{'readonly':[('active','=',False)]}"
+                    domain="[('share', '=', False)]"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
