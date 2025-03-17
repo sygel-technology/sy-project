@@ -10,6 +10,7 @@ setuptools.setup(
     install_requires=[
         'odoo-addon-duplicate_project_task_timesheet>=16.0dev,<16.1dev',
         'odoo-addon-project_coordinator>=16.0dev,<16.1dev',
+        'odoo-addon-project_internal_note>=16.0dev,<16.1dev',
         'odoo-addon-project_stock_portal>=16.0dev,<16.1dev',
         'odoo-addon-project_task_block_reason>=16.0dev,<16.1dev',
         'odoo-addon-project_task_description_template_section>=16.0dev,<16.1dev',
