@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="project_odoo_version_tree_view" model="ir.ui.view">
+        <field name="name">project.odoo.version.tree.view</field>
+        <field name="model">project.odoo.version</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name" />
+                <field name="description" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="project_odoo_version_form_view" model="ir.ui.view">
+        <field name="name">project.odoo.version.form.view</field>
+        <field name="model">project.odoo.version</field>
+        <field name="arch" type="xml">
+            <form string="Odoo Version">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                        </group>
+                        <group>
+                            <field name="description" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="project_odoo_version_search" model="ir.ui.view">
+        <field name="name">project.odoo.version.search</field>
+        <field name="model">project.odoo.version</field>
+        <field name="arch" type="xml">
+            <search string="Search Odoo Version">
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_project_odoo_version" model="ir.actions.act_window">
+        <field name="name">Odoo Version</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">project.odoo.version</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="search_view_id" ref="project_odoo_version_search" /> -->
+        <field name="view_id" ref="project_odoo_version_tree_view" />
+    </record>
+
+    <menuitem
+        id="project_odoo_version_menu"
+        parent="project.menu_project_config"
+        name="Odoo Versions"
+        action="action_project_odoo_version"
+        sequence="10"
+    />
+</odoo>
