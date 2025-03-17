@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [project_task_description_template_section](project_task_description_template_section/) | 16.0.1.0.0 |  | Project Task Description Template Section
 [project_task_expense](project_task_expense/) | 16.0.1.0.0 |  | Create expenses related to project tasks
 [project_task_identification](project_task_identification/) | 16.0.1.0.0 |  | Project Task Identification
+[project_task_show_project_manager](project_task_show_project_manager/) | 16.0.1.0.0 |  | Show Project Manager in Project Task
 [project_task_sign](project_task_sign/) | 16.0.1.0.0 |  | Sign tasks from portal.
 [project_task_stage_portal_user_visibility](project_task_stage_portal_user_visibility/) | 16.0.1.0.0 |  | Hide tasks in portal according to task's stage
 
