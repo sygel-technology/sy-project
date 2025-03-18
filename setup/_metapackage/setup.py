@@ -14,6 +14,7 @@ setuptools.setup(
         'odoo-addon-project_odoo_version>=16.0dev,<16.1dev',
         'odoo-addon-project_stock_portal>=16.0dev,<16.1dev',
         'odoo-addon-project_subtask_default_display_project>=16.0dev,<16.1dev',
+        'odoo-addon-project_subtask_parent_identification>=16.0dev,<16.1dev',
         'odoo-addon-project_task_block_reason>=16.0dev,<16.1dev',
         'odoo-addon-project_task_description_template_section>=16.0dev,<16.1dev',
         'odoo-addon-project_task_expense>=16.0dev,<16.1dev',
