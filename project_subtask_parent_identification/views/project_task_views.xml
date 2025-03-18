@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="project_subtask_parent_identification_view_task_kanban"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >project.subtask.parent.identification.view.task.kanban</field>
+        <field name="model">project.task</field>
+        <field
+            name="inherit_id"
+            ref="project_task_identification.project_task_identification_view_task_kanban"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='sy_id']" position="after">
+                <span style="font-weight: normal;">
+                    <field
+                        name="sy_parent_id"
+                        attrs="{'invisible': [('sy_parent_id', '=', False)]}"
+                    />
+                </span>
+            </xpath>
+        </field>
+    </record>
+</odoo>
