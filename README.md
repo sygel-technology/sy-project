@@ -37,6 +37,7 @@ addon | version | maintainers | summary
 [project_task_stage_portal_user_visibility](project_task_stage_portal_user_visibility/) | 16.0.1.0.0 |  | Hide tasks in portal according to task's stage
 [project_task_subtask_inline](project_task_subtask_inline/) | 16.0.1.0.0 |  | Project Task Subtask Inline
 [project_task_subtask_parent_filter](project_task_subtask_parent_filter/) | 16.0.1.0.0 |  | Project Task Subtask Parent Filter
+[task_requirements_mgmt](task_requirements_mgmt/) | 16.0.1.0.0 |  | Manage requirements related to a task
 
 [//]: # (end addons)
 

@@ -24,6 +24,7 @@ setuptools.setup(
         'odoo-addon-project_task_stage_portal_user_visibility>=16.0dev,<16.1dev',
         'odoo-addon-project_task_subtask_inline>=16.0dev,<16.1dev',
         'odoo-addon-project_task_subtask_parent_filter>=16.0dev,<16.1dev',
+        'odoo-addon-task_requirements_mgmt>=16.0dev,<16.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
