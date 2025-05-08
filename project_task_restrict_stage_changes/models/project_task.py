@@ -18,10 +18,8 @@ class ProjectTask(models.Model):
                 )
             ):
                 raise exceptions.ValidationError(
-                    _(
-                        "You are not allowed to move tasks to '{}' stage".format(
-                            new_stage_id.name
-                        )
+                    _("You are not allowed to move tasks to '{}' stage").format(
+                        new_stage_id.name
                     )
                 )
             old_restricted_stage_ids = self.mapped("stage_id").filtered(
@@ -31,10 +29,8 @@ class ProjectTask(models.Model):
                 "project_task_restrict_stage_changes.res_group_all_stages"
             ):
                 raise exceptions.ValidationError(
-                    _(
-                        "You are not allowed to remove tasks from {} stage(s)".format(
-                            old_restricted_stage_ids.mapped("name")
-                        )
+                    _("You are not allowed to remove tasks from {} stage(s)").format(
+                        old_restricted_stage_ids.mapped("name")
                     )
                 )
         return super().write(vals)

@@ -3,10 +3,7 @@
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
 
-    <record
-        id="project_task_restrict_stage_changes.res_group_all_stages"
-        model="res.groups"
-    >
+    <record id="res_group_all_stages" model="res.groups">
         <field name="name">Skip project task stage changes restriction</field>
         <field name="category_id" ref="base.module_category_usability" />
         <field name="comment">

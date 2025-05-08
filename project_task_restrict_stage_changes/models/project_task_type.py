@@ -8,8 +8,8 @@ class ProjectTask(models.Model):
     _inherit = "project.task.type"
 
     restrict_stage_assignment = fields.Boolean(
-        string="Restrict Stage Assignment",
+        string="Restrict Stage Assignment ",
     )
     restrict_stage_deallocation = fields.Boolean(
-        string="Restrict Stage Deallocation",
+        string="Restrict Stage Deallocation ",
     )
