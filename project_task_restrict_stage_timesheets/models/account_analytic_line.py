@@ -1,7 +1,7 @@
 # Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import _, exceptions, models
+from odoo import _, api, exceptions, models
 
 
 class AccountAnalyticLine(models.Model):
@@ -19,13 +19,12 @@ class AccountAnalyticLine(models.Model):
             ):
                 raise exceptions.ValidationError(
                     _(
-                        "You are not allowed to create timesheets in tasks that have the '{}' stage".format(
-                            new_task_id.stage_id.name
-                        )
-                    )
+                        "You are not allowed to create timesheets in "
+                        "tasks that have the '{}' stage"
+                    ).format(new_task_id.stage_id.name)
                 )
 
-    def _check_is_restricted_task_timesheet_edition(self, vals={}):
+    def _check_is_restricted_task_timesheet_edition(self, vals=None):
         restricted_stages = self.mapped("task_id.stage_id").filtered(
             lambda s: s.restrict_stage_timesheets
         )
@@ -44,15 +43,16 @@ class AccountAnalyticLine(models.Model):
         ):
             raise exceptions.ValidationError(
                 _(
-                    "You are not allowed to edit timesheets from tasks that have the {} stage(s)".format(
-                        restricted_stages.mapped("name")
-                    )
-                )
+                    "You are not allowed to edit timesheets "
+                    "from tasks that have the {} stage(s)"
+                ).format(restricted_stages.mapped("name"))
             )
 
-    def create(self, vals):
-        self._check_is_restricted_task_timesheet_creation(vals)
-        return super().create(vals)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            self._check_is_restricted_task_timesheet_creation(vals)
+        return super().create(vals_list)
 
     def write(self, vals):
         self._check_is_restricted_task_timesheet_creation(vals)

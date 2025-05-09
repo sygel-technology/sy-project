@@ -3,7 +3,7 @@
 {
     "name": "Project Task Restrict Stage Timesheets",
     "summary": "Configure task stages with a timesheet edition restriction",
-    "version": "12.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Project",
     "website": "https://github.com/sygel-technology/sy-project",
     "author": "Sygel",
@@ -11,6 +11,7 @@
     "application": False,
     "installable": True,
     "depends": [
+        "hr_timesheet",
         "project",
     ],
     "data": [
