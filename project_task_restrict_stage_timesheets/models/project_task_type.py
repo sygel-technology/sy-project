@@ -8,6 +8,6 @@ class ProjectTask(models.Model):
     _inherit = "project.task.type"
 
     restrict_stage_timesheets = fields.Boolean(
-        string='Restrict Timesheets',
-        help='Restrict creating timesheets for tasks in this stage'
+        string="Restrict Timesheets",
+        help="Restrict creating timesheets for tasks in this stage",
     )
