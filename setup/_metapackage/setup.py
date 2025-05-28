@@ -20,6 +20,7 @@ setuptools.setup(
         'odoo-addon-project_task_expense>=16.0dev,<16.1dev',
         'odoo-addon-project_task_identification>=16.0dev,<16.1dev',
         'odoo-addon-project_task_restrict_stage_changes>=16.0dev,<16.1dev',
+        'odoo-addon-project_task_restrict_stage_timesheets>=16.0dev,<16.1dev',
         'odoo-addon-project_task_show_project_manager>=16.0dev,<16.1dev',
         'odoo-addon-project_task_sign>=16.0dev,<16.1dev',
         'odoo-addon-project_task_stage_portal_user_visibility>=16.0dev,<16.1dev',
