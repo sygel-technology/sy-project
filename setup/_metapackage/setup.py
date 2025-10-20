@@ -18,6 +18,7 @@ setuptools.setup(
         'odoo-addon-project_task_block_reason>=16.0dev,<16.1dev',
         'odoo-addon-project_task_description_template_section>=16.0dev,<16.1dev',
         'odoo-addon-project_task_expense>=16.0dev,<16.1dev',
+        'odoo-addon-project_task_hide_add_property>=16.0dev,<16.1dev',
         'odoo-addon-project_task_identification>=16.0dev,<16.1dev',
         'odoo-addon-project_task_restrict_stage_changes>=16.0dev,<16.1dev',
         'odoo-addon-project_task_restrict_stage_timesheets>=16.0dev,<16.1dev',
