@@ -1,3 +1,7 @@
+.. image:: https://odoo-community.org/readme-banner-image
+   :target: https://odoo-community.org/get-involved?utm_source=readme
+   :alt: Odoo Community Association
+
 =========================================
 Project Task Description Template Section
 =========================================
@@ -13,11 +17,11 @@ Project Task Description Template Section
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--project-lightgray.png?logo=github
-    :target: https://github.com/sygel-technology/sy-project/tree/16.0/project_task_description_template_section
+    :target: https://github.com/sygel-technology/sy-project/tree/17.0/project_task_description_template_section
     :alt: sygel-technology/sy-project
 
 |badge1| |badge2| |badge3|
@@ -25,10 +29,10 @@ Project Task Description Template Section
 This module extends the functionality of
 project_task_description_template to add two functionalities:
 
-- Select in the task description template if it is inserted above or
-  under the current description of the task
-- Select in the task description template if it will be inserted in the
-  task description with a delimiter
+-  Select in the task description template if it is inserted above or
+   under the current description of the task
+-  Select in the task description template if it will be inserted in the
+   task description with a delimiter
 
 **Table of contents**
 
@@ -40,10 +44,10 @@ Configuration
 
 To configure this module, you need to:
 
-- Go to Project / Configuration / Task Description Templates. And create
-  or open a description template.
-- Fill the new template order, section, section name and section with
-  date fields.
+-  Go to Project / Configuration / Task Description Templates. And
+   create or open a description template.
+-  Fill the new template order, section, section name and section with
+   date fields.
 
 Usage
 =====
@@ -58,9 +62,9 @@ Known issues / Roadmap
 The section delimiter is an html tag, not text. It has some little
 issues:
 
-- It can not be copied and pasted.
-- To be deleted, you need to select with the cursor the text from abobe
-  and under it.
+-  It can not be copied and pasted.
+-  To be deleted, you need to select with the cursor the text from abobe
+   and under it.
 
 Bug Tracker
 ===========
@@ -68,7 +72,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/sygel-technology/sy-project/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/sygel-technology/sy-project/issues/new?body=module:%20project_task_description_template_section%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/sygel-technology/sy-project/issues/new?body=module:%20project_task_description_template_section%0Aversion:%2017.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -83,13 +87,13 @@ Authors
 Contributors
 ------------
 
-- Harald Panten harald.panten@sygel.es
-- Valentin Vinagre valentin.vinagre@sygel.es
-- Alberto Martínez alberto.martinez@sygel.es
+-  Harald Panten harald.panten@sygel.es
+-  Valentin Vinagre valentin.vinagre@sygel.es
+-  Alberto Martínez alberto.martinez@sygel.es
 
 Maintainers
 -----------
 
-This module is part of the `sygel-technology/sy-project <https://github.com/sygel-technology/sy-project/tree/16.0/project_task_description_template_section>`_ project on GitHub.
+This module is part of the `sygel-technology/sy-project <https://github.com/sygel-technology/sy-project/tree/17.0/project_task_description_template_section>`_ project on GitHub.
 
 You are welcome to contribute.
