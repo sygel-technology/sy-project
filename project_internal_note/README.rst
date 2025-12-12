@@ -17,12 +17,13 @@ Project Internal Note
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--project-lightgray.png?logo=github
-    :target: https://github.com/sygel-technology/sy-project/tree/16.0/project_internal_note
+    :target: https://github.com/sygel-technology/sy-project/tree/18.0/project_internal_note
     :alt: sygel-technology/sy-project
 
 |badge1| |badge2| |badge3|
 
-This module adds an internal note for projects and displays it in all tasks of the project.
+This module adds an internal note for projects and displays it in all
+tasks of the project.
 
 **Table of contents**
 
@@ -34,16 +35,16 @@ Usage
 
 To use this module, you need to:
 
-#. Go to the projects module.
-#. Edit or Create a new project.
-#. Go to the internal note tab and add what you want. 
-
+1. Go to the projects module.
+2. Edit or Create a new project.
+3. Go to the internal note tab and add what you want.
 
 To view it from the task:
 
-#. Go to the project module -> Tasks
-#. Edit or Create a new task
-#. You will see that in the internal notes tab the internal notes of the project will be displayed.
+1. Go to the project module -> Tasks
+2. Edit or Create a new task
+3. You will see that in the internal notes tab the internal notes of the
+   project will be displayed.
 
 Bug Tracker
 ===========
@@ -51,7 +52,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/sygel-technology/sy-project/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/sygel-technology/sy-project/issues/new?body=module:%20project_internal_note%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/sygel-technology/sy-project/issues/new?body=module:%20project_internal_note%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -59,21 +60,21 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Sygel
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* `Sygel <https://www.sygel.es>`__:
+-  `Sygel <https://www.sygel.es>`__:
 
-  * Valentín Vinagre
-  * Ángel García de la Chica Herrera
+   -  Valentín Vinagre
+   -  Ángel García de la Chica Herrera
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
-This module is part of the `sygel-technology/sy-project <https://github.com/sygel-technology/sy-project/tree/16.0/project_internal_note>`_ project on GitHub.
+This module is part of the `sygel-technology/sy-project <https://github.com/sygel-technology/sy-project/tree/18.0/project_internal_note>`_ project on GitHub.
 
 You are welcome to contribute.
