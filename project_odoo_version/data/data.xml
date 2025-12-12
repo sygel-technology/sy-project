@@ -71,4 +71,22 @@
     <record model="project.odoo.version" id="odoo_v19e">
         <field name="name">19E</field>
     </record>
+    <record model="project.odoo.version" id="odoo_v20">
+        <field name="name">20</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v20e">
+        <field name="name">20E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v21">
+        <field name="name">21</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v21e">
+        <field name="name">21E</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v22">
+        <field name="name">22</field>
+    </record>
+    <record model="project.odoo.version" id="odoo_v22e">
+        <field name="name">22E</field>
+    </record>
 </odoo>
