@@ -10,7 +10,7 @@ from odoo.addons.project.tests.test_project_base import TestProjectCommon
 class TestDuplicateTaskTimesheet(TestProjectCommon):
     @classmethod
     def setUpClass(cls):
-        super(TestDuplicateTaskTimesheet, cls).setUpClass()
+        super().setUpClass()
         cls.employee = cls.env["hr.employee"].create(
             {
                 "name": "Employee Test",
