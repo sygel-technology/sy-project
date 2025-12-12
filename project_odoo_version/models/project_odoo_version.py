@@ -75,4 +75,4 @@ class ProjectOdooVersion(models.Model):
                         "associated with an active record.\n{}"
                     ).format(res)
                 )
-        return super(ProjectOdooVersion, self).unlink()
+        return super().unlink()

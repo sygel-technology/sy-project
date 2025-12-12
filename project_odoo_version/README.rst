@@ -17,12 +17,14 @@ Project Odoo Version
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--project-lightgray.png?logo=github
-    :target: https://github.com/sygel-technology/sy-project/tree/16.0/project_odoo_version
+    :target: https://github.com/sygel-technology/sy-project/tree/18.0/project_odoo_version
     :alt: sygel-technology/sy-project
 
 |badge1| |badge2| |badge3|
 
-This module creates a model with the Odoo versions. These versions can be selected from the projects and will be displayed in the project tasks.
+This module creates a model with the Odoo versions. These versions can
+be selected from the projects and will be displayed in the project
+tasks.
 
 **Table of contents**
 
@@ -34,17 +36,17 @@ Configuration
 
 To configure this module, you need to:
 
-#. Go to *Project Module -> Configuration -> Odoo version*.
-#. Edit or Create a new Odoo version.
+1. Go to *Project Module -> Configuration -> Odoo version*.
+2. Edit or Create a new Odoo version.
 
 Usage
 =====
 
 To use this module, you need to:
 
-#. Go to Projects module.
-#. Edit or create a new project.
-#. Select a *Odoo Versión* of the project.
+1. Go to Projects module.
+2. Edit or create a new project.
+3. Select a *Odoo Versión* of the project.
 
 The *Odoo Version* you select will appear in all project tasks.
 
@@ -54,7 +56,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/sygel-technology/sy-project/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/sygel-technology/sy-project/issues/new?body=module:%20project_odoo_version%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/sygel-technology/sy-project/issues/new?body=module:%20project_odoo_version%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -62,21 +64,21 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Sygel
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* `Sygel <https://www.sygel.es>`__:
+-  `Sygel <https://www.sygel.es>`__:
 
-  * Valentín Vinagre <valentin.vinagre@sygel.es>
-  * Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+   -  Valentín Vinagre <valentin.vinagre@sygel.es>
+   -  Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
-This module is part of the `sygel-technology/sy-project <https://github.com/sygel-technology/sy-project/tree/16.0/project_odoo_version>`_ project on GitHub.
+This module is part of the `sygel-technology/sy-project <https://github.com/sygel-technology/sy-project/tree/18.0/project_odoo_version>`_ project on GitHub.
 
 You are welcome to contribute.
