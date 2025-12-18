@@ -19,5 +19,5 @@ class ProjectTask(models.Model):
         for task in self:
             res = ""
             if task.parent_id:
-                res = " -> {}".format(task.parent_id.sy_id)
+                res = f" -> {task.parent_id.sy_id}"
             task.sy_parent_id = res

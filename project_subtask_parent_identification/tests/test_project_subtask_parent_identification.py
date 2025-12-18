@@ -13,6 +13,6 @@ class TestProjectSubtaskParentIdentification(TestProjectCommon):
                 "parent_id": self.task_1.id,
             }
         )
-        self.assertEqual(subtask.sy_parent_id, " -> {}".format(self.task_1.sy_id))
+        self.assertEqual(subtask.sy_parent_id, f" -> {self.task_1.sy_id}")
         subtask.write({"parent_id": self.task_2.id})
-        self.assertEqual(subtask.sy_parent_id, " -> {}".format(self.task_2.sy_id))
+        self.assertEqual(subtask.sy_parent_id, f" -> {self.task_2.sy_id}")
