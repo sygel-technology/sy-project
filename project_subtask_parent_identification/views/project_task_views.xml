@@ -17,10 +17,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='sy_id']" position="after">
                 <span style="font-weight: normal;">
-                    <field
-                        name="sy_parent_id"
-                        attrs="{'invisible': [('sy_parent_id', '=', False)]}"
-                    />
+                    <field name="sy_parent_id" invisible="not sy_parent_id" />
                 </span>
             </xpath>
         </field>
