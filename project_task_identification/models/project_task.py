@@ -17,4 +17,4 @@ class ProjectTask(models.Model):
     @api.depends("create_date")
     def _compute_sy_id(self):
         for sel in self:
-            sel.sy_id = "T-{}".format(sel.id)
+            sel.sy_id = f"T-{sel.id}"

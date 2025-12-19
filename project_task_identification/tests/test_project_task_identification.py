@@ -9,4 +9,4 @@ class TestProjectTaskIdentification(TestProjectCommon):
         task = self.env["project.task"].create(
             {"name": "Task test", "project_id": self.project_pigs.id}
         )
-        self.assertEqual(task.sy_id, "T-{}".format(task.id))
+        self.assertEqual(task.sy_id, f"T-{task.id}")
