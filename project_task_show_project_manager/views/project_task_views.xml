@@ -7,7 +7,7 @@
         <field name="model">project.task</field>
         <field name="inherit_id" ref="project.view_task_form2" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='display_project_id']" position="after">
+            <xpath expr="//div[@name='project']" position="after">
                 <field name="manager_id" widget="many2one_avatar_user" />
             </xpath>
         </field>
