@@ -22,18 +22,29 @@ Project Task Block Reason
 
 |badge1| |badge2| |badge3|
 
-This module allows you to introduce a reason when a task is blocked.
+This module allows you to block tasks and provide a reason when a task
+is blocked.
 
-An example of the kanban task view:
+The blocked reason will be displayed in the form, kanban and list view
+of the tasks.
 
-   |Example Kanban View|
+Blocking (or unblocking) a task also blocks (or unblocks) their children
+tasks.
 
 An example of the form view of a task:
 
-   |Example Form View|
+|Example Form View|
 
-.. |Example Kanban View| image:: https://raw.githubusercontent.com/sygel-technology/sy-project/18.0/project_task_block_reason/static/img/example_kanban.png
-.. |Example Form View| image:: https://raw.githubusercontent.com/sygel-technology/sy-project/18.0/project_task_block_reason/static/img/example_form.png
+Note: Odoo already has a task-blocking feature based on task
+dependencies that can coexist with the blocking feature provided by this
+module. On one hand, both blocking features share the same "waiting"
+state to mark a task as blocked. On the other hand, this module provides
+a manual task-blocking mechanism, while Odoo blocks tasks if they have
+unfinished dependencies. If you have this module installed and task
+dependencies enabled, a task may be blocked for either of these two
+reasons.
+
+.. |Example Form View| image:: https://raw.githubusercontent.com/sygel-technology/sy-project/18.0/project_task_block_reason/static/src/img/example_form.png
 
 **Table of contents**
 
@@ -48,6 +59,41 @@ To use this module, you need to:
 1. Go to the tasks in the Projects module
 2. Open or create a new task.
 3. Click on block and add a reason
+
+Note: If you change the main state of a blocked task, the task gets
+automatically unblocked by Odoo.
+
+Known issues / Roadmap
+======================
+
+-  Since v18, the behaviour of this module is different.
+
+   The reason is that, in the base project module, the "kanban_state"
+   field has been removed from the project.task model, and has been
+   replaced with the "state" field, which does not longer contain the
+   "blocked" value.
+
+   The old "blocked" state came along with some UI customization to warn
+   the user of that state. The new "waiting" state of the new v18 field
+   has been used to replace this UI behaviour, as it can express the
+   same as the old blocked state.
+
+   A new button has been added to block tasks and assign that "waiting"
+   state.
+
+-  The module’s manual blocking mechanism currently operates in parallel
+   with Odoo’s native Blocked by feature.
+
+   IMP: As a future improvement, it could be explored to better
+   synchronize both mechanisms. For example, disabling or hiding the
+   manual Block/Unblock actions when a task is already blocked by native
+   dependencies, or automatically enabling/disabling the manual blocking
+   state when blocking dependencies (depend_on_ids field) are added or
+   removed.
+
+   This could be considered only if it can be implemented without
+   introducing excessive complexity or altering the current lightweight
+   behavior of the module.
 
 Bug Tracker
 ===========
@@ -74,7 +120,9 @@ Contributors
 
    -  Manuel Regidor
    -  Ángel García de la Chica Herrera
+   -  Alberto Martínez
    -  Valentín Vinagre
+   -  Harald Panten
 
 Maintainers
 -----------

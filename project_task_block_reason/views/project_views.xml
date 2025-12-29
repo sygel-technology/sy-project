@@ -11,29 +11,75 @@
                 <group name="blocked_reason">
                     <field
                         name="task_blocked_reason"
-                        attrs="{'invisible': [('kanban_state', '!=', 'blocked')]}"
+                        invisible="not blocked"
                         decoration-danger="1"
                     />
                 </group>
             </xpath>
+            <xpath expr="//header" position="inside">
+                <button
+                    string="Block"
+                    name="action_block"
+                    type="object"
+                    invisible="blocked"
+                />
+                <button
+                    string="Unblock"
+                    name="action_unblock"
+                    type="object"
+                    invisible="not blocked"
+                />
+            </xpath>
+            <xpath
+                expr="//field[@name='child_ids']/list/field[@name='stage_id']"
+                position="after"
+            >
+                <field
+                    name="task_blocked_reason"
+                    invisible="not blocked"
+                    optional="show"
+                />
+            </xpath>
         </field>
     </record>
 
-    <record id="project_task_block_reason_view_task_kanban" model="ir.ui.view">
-        <field name="name">project.task.block.reason.view.task.kanban</field>
+    <record id="project_task_view_tree_main_base" model="ir.ui.view">
+        <field name="name">project.task.view.list.main.base</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.project_task_view_tree_main_base" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='stage_id'][last()]" position="after">
+                <field
+                    name="task_blocked_reason"
+                    invisible="not blocked"
+                    optional="show"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_task_search_form_base" model="ir.ui.view">
+        <field name="name">project.task.search.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form_base" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='blocked']" position="attributes">
+                <attribute name="groups" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_task_kanban" model="ir.ui.view">
+        <field name="name">project.task.kanban</field>
         <field name="model">project.task</field>
         <field name="inherit_id" ref="project.view_task_kanban" />
         <field name="arch" type="xml">
-            <xpath expr="//t[@t-name='kanban-box']/div[1]/div[1]" position="after">
+            <xpath expr="//footer" position="after">
                 <div
-                    name="blocked_reason"
-                    groups="base.group_user"
-                    style="background: #fdedec; margin-top: 5px; color: #CD5C5C;"
+                    t-if="record.blocked.raw_value and record.task_blocked_reason.raw_value"
                 >
-                    <field
-                        name="task_blocked_reason"
-                        attrs="{'invisible': [('kanban_state', '!=', 'blocked')]}"
-                    />
+                    <field name="blocked" invisible="True" />
+                    <field name="task_blocked_reason" />
                 </div>
             </xpath>
         </field>
