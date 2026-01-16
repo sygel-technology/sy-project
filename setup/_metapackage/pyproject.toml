@@ -1,8 +1,9 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-project"
-version = "18.0.20260116.0"
+version = "18.0.20260116.1"
 dependencies = [
     "odoo-addon-project_coordinator==18.0.*",
+    "odoo-addon-project_internal_note==18.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",

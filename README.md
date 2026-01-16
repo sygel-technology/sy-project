@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_coordinator](project_coordinator/) | 18.0.1.0.0 |  | Project Coordinator
+[project_internal_note](project_internal_note/) | 18.0.1.0.0 |  | Project Internal Note
 
 [//]: # (end addons)
 
