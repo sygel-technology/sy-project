@@ -16,6 +16,13 @@ Odoo Project Management and Services Company Addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[project_coordinator](project_coordinator/) | 18.0.1.0.0 |  | Project Coordinator
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
