@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_coordinator](project_coordinator/) | 18.0.1.0.0 |  | Project Coordinator
 [project_internal_note](project_internal_note/) | 18.0.1.0.0 |  | Project Internal Note
+[project_task_description_template_section](project_task_description_template_section/) | 18.0.1.0.0 |  | Project Task Description Template Section
 [project_task_identification](project_task_identification/) | 18.0.1.1.0 |  | Project Task Identification
 [project_task_show_project_manager](project_task_show_project_manager/) | 18.0.1.0.0 |  | Show Project Manager in Project Task
 
