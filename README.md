@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[duplicate_project_task_timesheet](duplicate_project_task_timesheet/) | 18.0.1.0.0 |  | Button to duplicate project task timesheet lines
 [project_coordinator](project_coordinator/) | 18.0.1.0.0 |  | Project Coordinator
 [project_internal_note](project_internal_note/) | 18.0.1.0.0 |  | Project Internal Note
 [project_task_description_template_section](project_task_description_template_section/) | 18.0.1.0.0 |  | Project Task Description Template Section
