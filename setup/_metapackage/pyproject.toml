@@ -1,12 +1,13 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-project"
-version = "18.0.20260202.3"
+version = "18.0.20260304.0"
 dependencies = [
     "odoo-addon-duplicate_project_task_timesheet==18.0.*",
     "odoo-addon-project_coordinator==18.0.*",
     "odoo-addon-project_internal_note==18.0.*",
     "odoo-addon-project_odoo_version==18.0.*",
     "odoo-addon-project_subtask_default_display_project==18.0.*",
+    "odoo-addon-project_subtask_parent_identification==18.0.*",
     "odoo-addon-project_task_description_template_section==18.0.*",
     "odoo-addon-project_task_identification==18.0.*",
     "odoo-addon-project_task_show_project_manager==18.0.*",
