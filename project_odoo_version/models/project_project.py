@@ -16,7 +16,7 @@ class Project(models.Model):
     @api.constrains("odoo_version")
     def _check_active_odoo_version(self):
         for sel in self:
-            if not sel.odoo_version.active:
+            if sel.odoo_version and not sel.odoo_version.active:
                 raise ValidationError(
                     _(
                         "You can choose only one active version. "
