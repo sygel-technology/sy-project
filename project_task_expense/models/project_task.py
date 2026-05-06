@@ -16,7 +16,7 @@ class ProjectTask(models.Model):
     def _compute_expenses_count(self):
         for sel in self:
             sel.expenses_count = self.env["hr.expense"].search_count(
-                [("project_task_id", "=", self.id), ("state", "!=", "refused")]
+                [("project_task_id", "=", sel.id), ("state", "!=", "refused")]
             )
 
     def action_view_expenses(self):
@@ -24,7 +24,7 @@ class ProjectTask(models.Model):
             "type": "ir.actions.act_window",
             "res_model": "hr.expense",
             "domain": [("project_task_id", "=", self.id)],
-            "view_mode": "tree,form",
+            "view_mode": "list,form",
             "target": "current",
             "name": _("Expenses"),
             "context": {"default_project_task_id": self.id},

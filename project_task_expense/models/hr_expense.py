@@ -17,21 +17,17 @@ class HrExpense(models.Model):
             if (
                 self.project_task_id
                 and self.project_task_id.project_id
-                and self.project_task_id.project_id.analytic_account_id
+                and self.project_task_id.project_id.account_id
             ):
                 analytic_distribution = {
-                    self.project_task_id.project_id.analytic_account_id.id: 100
+                    self.project_task_id.project_id.account_id.id: 100
                 }
             sel.analytic_distribution = analytic_distribution
         return res
 
     @api.onchange("project_task_id")
     def _onchange_project_task_id(self):
-        if (
-            self.project_task_id
-            and self.project_task_id.project_id
-            and self.project_task_id.project_id.analytic_account_id
-        ):
+        if self.project_task_id.project_id.account_id:
             self.analytic_distribution = {
-                self.project_task_id.project_id.analytic_account_id.id: 100
+                self.project_task_id.project_id.account_id.id: 100
             }

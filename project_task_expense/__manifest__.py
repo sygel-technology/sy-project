@@ -4,7 +4,7 @@
 {
     "name": "Project Task Expense",
     "summary": "Create expenses related to project tasks",
-    "version": "16.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Project",
     "website": "https://github.com/sygel-technology/sy-project",
     "author": "Sygel",

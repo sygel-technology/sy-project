@@ -14,7 +14,7 @@
                     type="object"
                     class="oe_stat_button"
                     icon="fa-dollar"
-                    attrs="{'invisible': [('allow_tasks_expenses', '=', False)]}"
+                    invisible="not allow_tasks_expenses"
                 >
                     <div class="o_field_widget o_stat_info">
                         <span class="o_stat_value ">
@@ -29,26 +29,10 @@
                 </button>
             </xpath>
             <group name="group_time_managment" position="after">
-                <group
-                    name="group_tasks_expenses"
-                    string="Tasks Expenses"
-                    col="1"
-                    class="row mt16 o_settings_container"
-                >
-                    <div class="o_setting_box" id="tasks_expenses_settings" colspan="2">
-                        <div class="o_setting_left_pane">
-                            <field name="allow_tasks_expenses" />
-                        </div>
-                        <div class="o_setting_right_pane">
-                            <label
-                                for="allow_tasks_expenses"
-                                string="Allow Tasks Expenses"
-                            />
-                            <div class="text-muted">
-                                Create expenses related to tasks
-                            </div>
-                        </div>
-                    </div>
+                <group string="Tasks Expenses" class="row mt16 o_settings_container">
+                    <setting class="col-lg-12" help="Create expenses related to tasks">
+                        <field name="allow_tasks_expenses" />
+                    </setting>
                 </group>
             </group>
         </field>
@@ -65,7 +49,7 @@
                     type="object"
                     class="oe_stat_button"
                     icon="fa-dollar"
-                    attrs="{'invisible': [('allow_tasks_expenses', '=', False)]}"
+                    invisible="not allow_tasks_expenses"
                 >
                     <div class="o_field_widget o_stat_info">
                         <span class="o_stat_value ">

@@ -14,7 +14,7 @@ class ProjectProject(models.Model):
         for sel in self:
             sel.expenses_count = self.env["hr.expense"].search_count(
                 [
-                    ("project_task_id.project_id", "=", self.id),
+                    ("project_task_id.project_id", "=", sel.id),
                     ("state", "!=", "refused"),
                 ]
             )
@@ -29,8 +29,8 @@ class ProjectProject(models.Model):
             "res_model": "hr.expense",
             "domain": [("project_task_id", "in", task_ids)],
             "view_id": view_id,
-            "views": [(view_id, "tree"), (False, "form")],
-            "view_mode": "tree,form",
+            "views": [(view_id, "list"), (False, "form")],
+            "view_mode": "list,form",
             "target": "current",
             "name": _("Expenses"),
         }

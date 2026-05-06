@@ -7,7 +7,7 @@
         <field name="model">hr.expense</field>
         <field name="inherit_id" ref="hr_expense.hr_expense_view_form" />
         <field name="arch" type="xml">
-            <field name="reference" position="before">
+            <field name="date" position="before">
                 <field name="project_task_id" options="{'no_create': True}" />
             </field>
         </field>
