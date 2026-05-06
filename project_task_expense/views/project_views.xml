@@ -19,10 +19,10 @@
                     <div class="o_field_widget o_stat_info">
                         <span class="o_stat_value ">
                             <field
-                                name="expenses_count"
-                                widget="statinfo"
-                                nolabel="1"
-                            />
+                            name="expenses_count"
+                            widget="statinfo"
+                            nolabel="1"
+                        />
                             Expenses
                         </span>
                     </div>
@@ -70,10 +70,10 @@
                     <div class="o_field_widget o_stat_info">
                         <span class="o_stat_value ">
                             <field
-                                name="expenses_count"
-                                widget="statinfo"
-                                nolabel="1"
-                            />
+                            name="expenses_count"
+                            widget="statinfo"
+                            nolabel="1"
+                        />
                             Expenses
                         </span>
                     </div>
