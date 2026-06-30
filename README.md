@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [project_subtask_parent_identification](project_subtask_parent_identification/) | 18.0.1.0.0 |  | Project Subtask Parent Identification
 [project_task_block_reason](project_task_block_reason/) | 18.0.1.0.0 |  | Introduce a reason when a task is blocked
 [project_task_description_template_section](project_task_description_template_section/) | 18.0.1.0.0 |  | Project Task Description Template Section
+[project_task_expense](project_task_expense/) | 18.0.1.0.0 |  | Create expenses related to project tasks
 [project_task_identification](project_task_identification/) | 18.0.1.1.0 |  | Project Task Identification
 [project_task_show_project_manager](project_task_show_project_manager/) | 18.0.1.0.0 |  | Show Project Manager in Project Task
 
