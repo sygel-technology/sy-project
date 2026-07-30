@@ -3,7 +3,7 @@
 
 {
     "name": "Project Task Sign",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Project",
     "summary": """
         Sign tasks from portal.

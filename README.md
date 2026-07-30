@@ -36,7 +36,7 @@ addon | version | maintainers | summary
 [project_task_restrict_stage_changes](project_task_restrict_stage_changes/) | 16.0.1.0.0 |  | Configure task stages restricted to a user group
 [project_task_restrict_stage_timesheets](project_task_restrict_stage_timesheets/) | 16.0.1.0.0 |  | Configure task stages with a timesheet edition restriction
 [project_task_show_project_manager](project_task_show_project_manager/) | 16.0.1.0.0 |  | Show Project Manager in Project Task
-[project_task_sign](project_task_sign/) | 16.0.1.0.0 |  | Sign tasks from portal.
+[project_task_sign](project_task_sign/) | 16.0.1.0.1 |  | Sign tasks from portal.
 [project_task_stage_portal_user_visibility](project_task_stage_portal_user_visibility/) | 16.0.1.0.0 |  | Hide tasks in portal according to task's stage
 [project_task_subtask_inline](project_task_subtask_inline/) | 16.0.1.0.0 |  | Project Task Subtask Inline
 [project_task_subtask_parent_filter](project_task_subtask_parent_filter/) | 16.0.1.0.0 |  | Project Task Subtask Parent Filter
