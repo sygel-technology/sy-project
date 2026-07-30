@@ -39,11 +39,7 @@ To use this module, you need to:
 ROADMAP
 =======
 
-[ Enumerate known caveats and future potential improvements.
-  It is mostly intended for end-users, and can also help
-  potential new contributors discovering new features to implement. ]
-
-* ...
+* This module, in the migration to next versions, should be splitted in two: project_task_sign and project_task_sign_portal
 
 
 Bug Tracker
